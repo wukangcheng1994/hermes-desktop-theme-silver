@@ -69,4 +69,4 @@ Issues and pull requests are welcome: colors, accessibility, compatibility and d
 
 ## Marketplace edition
 
-The [Marketplace package](marketplace/README.md) provides light and dark palettes for Hermes’s built-in theme search. It is prepared but not yet published to Visual Studio Marketplace. This edition does not include the desktop plugin’s glass CSS or chat layout adjustments.
+The [Marketplace package](marketplace/README.md) provides light and dark palettes for Hermes’s built-in theme search. Version 1.2.0 has been submitted to Visual Studio Marketplace and is awaiting marketplace verification. Search availability depends on verification and indexing. This edition does not include the desktop plugin’s glass CSS or chat layout adjustments.

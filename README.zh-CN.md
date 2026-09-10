@@ -69,4 +69,4 @@
 
 ## 主题市场版本
 
-已准备[主题市场安装包](marketplace/README.zh-CN.md)，用于 Hermes 内置主题搜索，目前尚未发布到 Visual Studio Marketplace。该版本提供浅色和深色配色，不包含桌面插件的玻璃 CSS 或聊天布局调整。
+已准备[主题市场安装包](marketplace/README.zh-CN.md)，用于 Hermes 内置主题搜索，v1.2.0 已提交到 Visual Studio Marketplace，正在等待市场验证；验证和搜索索引完成后才能在 App 中搜到。该版本提供浅色和深色配色，不包含桌面插件的玻璃 CSS 或聊天布局调整。
