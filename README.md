@@ -2,7 +2,7 @@
 
 # Hermes Desktop Theme — Silver Studio
 
-A macOS-inspired light and dark theme for **official Hermes Desktop**. Version **1.1.0** combines a warm porcelain canvas, titanium-gray sidebar, graphite text and deep ocean-blue accents, with system fonts, opaque composers and subtle shadows.
+A macOS-inspired light and dark theme for **official Hermes Desktop**. Version **1.2.0** combines a crisp white canvas, cool silver sidebar, dark graphite text and blue accents, with system fonts, glass-inspired highlights and subtle shadows.
 
 ![Illustrative theme preview](docs/preview.svg)
 
@@ -10,7 +10,16 @@ A macOS-inspired light and dark theme for **official Hermes Desktop**. Version *
 
 ## Appearance
 
-The palette follows the app's light/dark mode. Assistant prose uses a relaxed 1.65 line height and a 72ch reading limit; code and tables keep their available width. The plugin changes colors, fonts, corner radius and composer styling; it does not add Bot features or fix sidebar behavior.
+The palette follows the app's light/dark mode. Assistant prose uses a relaxed 1.65 line height and a 72ch reading limit; code and tables keep their available width. Sessions and Bots share the same sidebar treatment. User messages scroll with the conversation instead of sticking to the top. The composer stays visible while scrolling and becomes opaque when focused. Glass effects are decorative CSS styling; this does not implement Apple’s Liquid Glass rendering. Reduced-transparency preferences are respected.
+
+The plugin changes visual styling; it does not add Bot features, repair collapsed sidebars or provide message recovery controls.
+
+## What changed in 1.2.0
+
+- Restored a clear white canvas with stronger text contrast and cool silver surfaces.
+- Unified Sessions and Bots glass styling, including empty Bot views.
+- Added highlighted capsule tabs and a softly elevated composer.
+- Removed sticky user prompts and their height clipping in normal chat; HUD layout stays separate.
 
 ## Install
 
@@ -40,7 +49,7 @@ Silver Studio is an independent plugin stored in your Hermes home directory, out
 
 To update the theme, download the latest repository or release, repeat the file-copy step above, and reload desktop plugins or restart Hermes. If an app update changes the appearance or prevents the theme from loading, select another theme and report the Hermes version and symptoms in an Issue.
 
-The maintainer's local Hermes sidebar fixes are changes to the application itself and are **not included in this theme**. An app update may overwrite those local fixes independently of the theme.
+The maintainer's local Hermes sidebar and message recovery fixes are changes to the application itself and are **not included in this theme**. An app update may overwrite those local fixes independently of the theme.
 
 ## Remove
 
