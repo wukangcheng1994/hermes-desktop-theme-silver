@@ -1,8 +1,8 @@
-# Silver Studio · 银境
+# Hermes Desktop Theme — Silver Studio · 银境
 
 A macOS-inspired light and dark theme for **official Hermes Desktop**. Warm white canvas, silver sidebar, graphite text and restrained blue accents, with system fonts and subtle composer shadows.
 
-为 **官方 Hermes Desktop** 设计的明暗主题：暖白画布、银灰侧栏、石墨文字与蓝色点缀，配合系统字体和轻阴影输入框。
+为 **官方 Hermes Desktop** 设计的 macOS 风格桌面主题 / 外观皮肤（theme / skin）：暖白画布、银灰侧栏、石墨文字与蓝色点缀，配合系统字体和轻阴影输入框。
 
 ![Illustrative theme preview / 主题配色示意图](docs/preview.svg)
 
@@ -17,8 +17,8 @@ Tested on macOS with Hermes Desktop **v0.21.1**. Hermes One and other operating 
 1. Download this repository using **Code → Download ZIP** and extract it, or clone it:
 
    ```sh
-   git clone https://github.com/wukangcheng1994/hermes-silver-studio.git
-   cd hermes-silver-studio
+   git clone https://github.com/wukangcheng1994/hermes-desktop-theme-silver.git
+   cd hermes-desktop-theme-silver
    ```
 
 2. From the extracted repository folder, copy `plugin.js` into your Hermes plugin directory:
@@ -49,6 +49,12 @@ Select another theme, remove only the `silver-studio` folder from your Hermes `d
 With Node.js installed, run `node check.mjs` (or `npm test`). No dependencies to install. The check covers selected light/dark text contrast pairs, theme registration and style cleanup using a mocked host; it is not a full application UI test.
 
 安装 Node.js 后运行 `node check.mjs`（或 `npm test`），无需安装依赖。检查明暗主题的主要文字对比度、主题注册及样式清理；使用模拟宿主，不代表完整应用界面测试。
+
+## Contributing / 一起维护
+
+Issues and pull requests are welcome: colors, accessibility, compatibility and documentation. Fork this repository and submit a pull request; maintainers review changes before merging. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+欢迎通过 Issue 反馈问题或建议，也欢迎 Fork 后提交 Pull Request，一起完善配色、可读性、兼容性与文档。改动由维护者审核后合并。
 
 ## License / 许可
 
