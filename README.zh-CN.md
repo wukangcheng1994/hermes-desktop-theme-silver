@@ -66,3 +66,7 @@
 ## 许可
 
 采用 [MIT 许可证](LICENSE)，© 2026 wukangcheng1994。独立社区主题，受 macOS 风格启发，非 Apple 或 Nous Research 官方作品，亦未获得其背书。未附带 Apple 字体或其他专有素材。
+
+## 主题市场版本
+
+已准备[主题市场安装包](marketplace/README.zh-CN.md)，用于 Hermes 内置主题搜索，目前尚未发布到 Visual Studio Marketplace。该版本提供浅色和深色配色，不包含桌面插件的玻璃 CSS 或聊天布局调整。

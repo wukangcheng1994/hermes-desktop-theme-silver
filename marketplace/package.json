@@ -1,0 +1,48 @@
+{
+  "name": "hermes-silver-studio",
+  "displayName": "Silver Studio — Hermes Theme",
+  "description": "Clear white and graphite dark color themes for Hermes Desktop and VS Code. 银境：清晰白色与石墨深色配色。",
+  "version": "1.2.0",
+  "publisher": "wukangcheng1994",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "hermes",
+    "hermes desktop",
+    "silver studio",
+    "light theme",
+    "dark theme",
+    "银境"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wukangcheng1994/hermes-desktop-theme-silver.git",
+    "directory": "marketplace"
+  },
+  "homepage": "https://github.com/wukangcheng1994/hermes-desktop-theme-silver",
+  "bugs": {
+    "url": "https://github.com/wukangcheng1994/hermes-desktop-theme-silver/issues"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Silver Studio Light",
+        "uiTheme": "vs",
+        "path": "./themes/silver-studio-light.json"
+      },
+      {
+        "label": "Silver Studio Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/silver-studio-dark.json"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node check.mjs"
+  }
+}

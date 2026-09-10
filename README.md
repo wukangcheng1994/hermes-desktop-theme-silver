@@ -66,3 +66,7 @@ Issues and pull requests are welcome: colors, accessibility, compatibility and d
 ## License
 
 [MIT](LICENSE) © 2026 wukangcheng1994. Independent community theme, inspired by macOS; not affiliated with or endorsed by Apple or Nous Research. No Apple fonts or other proprietary assets are bundled.
+
+## Marketplace edition
+
+The [Marketplace package](marketplace/README.md) provides light and dark palettes for Hermes’s built-in theme search. It is prepared but not yet published to Visual Studio Marketplace. This edition does not include the desktop plugin’s glass CSS or chat layout adjustments.
