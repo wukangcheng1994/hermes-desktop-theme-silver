@@ -1,8 +1,8 @@
 # Hermes Desktop Theme — Silver Studio · 银境
 
-A macOS-inspired light and dark theme for **official Hermes Desktop**. Warm white canvas, silver sidebar, graphite text and restrained blue accents, with system fonts and subtle composer shadows.
+A macOS-inspired light and dark theme for **official Hermes Desktop**. Warm porcelain canvas, titanium-gray sidebar, graphite text and deep ocean-blue accents, with system fonts, opaque composers and subtle shadows.
 
-为 **官方 Hermes Desktop** 设计的 macOS 风格桌面主题 / 外观皮肤（theme / skin）：暖白画布、银灰侧栏、石墨文字与蓝色点缀，配合系统字体和轻阴影输入框。
+为 **官方 Hermes Desktop** 设计的 macOS 风格桌面主题 / 外观皮肤（theme / skin）：暖瓷白画布、钛灰侧栏、石墨文字与深海蓝点缀，配合系统字体、实色输入框和轻阴影。
 
 ![Illustrative theme preview / 主题配色示意图](docs/preview.svg)
 
@@ -34,9 +34,9 @@ Tested on macOS with Hermes Desktop **v0.21.1**. Hermes One and other operating 
 
    打开「设置 → 外观」，选择 **Silver Studio · 银境**。未出现时按 **⌘K**，执行 **Reload desktop plugins** 后重新打开外观设置；必要时重启 Hermes。
 
-The palette follows the app's light/dark mode. The plugin changes colors, fonts, corner radius and composer styling; it does not add Bot features or fix sidebar behavior.
+The palette follows the app's light/dark mode. Assistant prose uses a relaxed 1.65 line height and a 72ch reading limit; code and tables keep their available width. The plugin changes colors, fonts, corner radius and composer styling; it does not add Bot features or fix sidebar behavior.
 
-配色跟随应用的明暗模式。插件调整颜色、字体、圆角与输入框样式，不提供 Bot 功能或侧栏修复。
+配色跟随应用的明暗模式。回复正文采用 1.65 倍行距与 72ch 阅读宽度上限；代码和表格保留可用宽度。插件调整颜色、字体、圆角与输入框样式，不提供 Bot 功能或侧栏修复。
 
 ## Remove / 卸载
 

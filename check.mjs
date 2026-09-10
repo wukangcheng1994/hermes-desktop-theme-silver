@@ -14,7 +14,7 @@ const contrast = (a, b) => (Math.max(luminance(a), luminance(b)) + .05) /
   (Math.min(luminance(a), luminance(b)) + .05)
 for (const palette of [theme.colors, theme.darkColors]) {
   for (const [ink, surface] of [['foreground', 'background'], ['foreground', 'sidebarBackground'],
-    ['primary', 'sidebarBackground'], ['primaryForeground', 'primary'], ['mutedForeground', 'background'],
+    ['mutedForeground', 'sidebarBackground'], ['accentForeground', 'accent'], ['primary', 'sidebarBackground'], ['primaryForeground', 'primary'], ['mutedForeground', 'background'],
     ['destructiveForeground', 'destructive']]) {
     assert(contrast(palette[ink], palette[surface]) >= 4.5, `${ink}/${surface} contrast`)
   }

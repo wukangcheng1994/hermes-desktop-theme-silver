@@ -3,24 +3,24 @@ import { THEMES_AREA } from '@hermes/plugin-sdk'
 export const theme = {
   name: 'silver-studio',
   label: 'Silver Studio · 银境',
-  description: '原创 macOS 风格：暖白画布、银灰侧栏、石墨文字与克制的蓝色点缀。',
+  description: '原创 macOS 风格：暖瓷白画布、钛灰侧栏、石墨文字与深海蓝点缀。',
   typography: {
     fontSans: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", sans-serif',
     fontMono: '"SF Mono", Menlo, Monaco, monospace'
   },
   colors: {
-    background: '#fbfbfa', foreground: '#202124',
-    card: '#ffffff', cardForeground: '#202124',
-    muted: '#f0f1f3', mutedForeground: '#60646b',
-    popover: '#ffffff', popoverForeground: '#202124',
-    primary: '#0066cc', primaryForeground: '#ffffff',
-    secondary: '#e8edf4', secondaryForeground: '#202124',
-    accent: '#e7f0fb', accentForeground: '#202124',
-    border: '#d7d9de', input: '#e0e2e7', ring: '#0066cc',
-    midground: '#0066cc', midgroundForeground: '#ffffff', composerRing: '#0066cc',
+    background: '#FAF9F6', foreground: '#20242B',
+    card: '#ffffff', cardForeground: '#20242B',
+    muted: '#E9EBEE', mutedForeground: '#626975',
+    popover: '#ffffff', popoverForeground: '#20242B',
+    primary: '#245B91', primaryForeground: '#ffffff',
+    secondary: '#E5E9EF', secondaryForeground: '#20242B',
+    accent: '#DFE9F5', accentForeground: '#245B91',
+    border: '#CDD2D9', input: '#BCC4CE', ring: '#245B91',
+    midground: '#245B91', midgroundForeground: '#ffffff', composerRing: '#245B91',
     destructive: '#b42332', destructiveForeground: '#ffffff',
-    sidebarBackground: '#f0f1f3', sidebarBorder: '#d9dce1',
-    userBubble: '#eaf2fc', userBubbleBorder: '#d6e4f5'
+    sidebarBackground: '#E9EBEE', sidebarBorder: '#CDD2D9',
+    userBubble: '#E7EEF6', userBubbleBorder: '#CEDCEB'
   },
   darkColors: {
     background: '#1c1d20', foreground: '#f1f2f4',
@@ -49,6 +49,26 @@ export default {
     style.textContent = `
       :root[data-hermes-theme="silver-studio"] {
         --radius-scalar: .9;
+        --theme-mix-chrome: 100% !important;
+        --ui-text-primary: var(--theme-foreground);
+        --ui-text-secondary: ${theme.colors.mutedForeground};
+        --ui-text-tertiary: ${theme.colors.mutedForeground};
+        --ui-row-active-background: var(--theme-accent-soft);
+        --ui-selection-background: var(--theme-accent-soft);
+        --composer-fill: var(--dt-card);
+      }
+      :root[data-hermes-theme="silver-studio"][data-hermes-mode="dark"] {
+        --ui-text-secondary: ${theme.darkColors.mutedForeground};
+        --ui-text-tertiary: ${theme.darkColors.mutedForeground};
+      }
+      :root[data-hermes-theme="silver-studio"] [data-slot="composer-root"] {
+        --composer-fill: var(--dt-card);
+      }
+      :root[data-hermes-theme="silver-studio"] [data-slot="aui_assistant-message-content"] .aui-md {
+        --dt-line-height: 1.65;
+      }
+      :root[data-hermes-theme="silver-studio"] [data-slot="aui_assistant-message-content"] .aui-md :where(p, ul, ol, blockquote) {
+        max-width: 72ch;
       }
       :root[data-hermes-theme="silver-studio"] [data-slot="composer-surface"],
       :root[data-hermes-theme="silver-studio"] .composer-fallback-surface {
