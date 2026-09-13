@@ -8,6 +8,27 @@ A macOS-inspired light and dark theme for **official Hermes Desktop**. Version *
 
 *Illustration, not an application screenshot.*
 
+## New theme: Porcelain Aurora
+
+**Porcelain Aurora · 瓷白极光** is a separate theme. The original **Silver Studio · 银境** is unchanged; both can be installed together.
+
+A white chat canvas, neutral porcelain sidebar, pale-blue selection and aurora-blue text, retaining glass blur, highlights and scrolling message bubbles. The sidebar's blue gradient is removed and background color bleed reduced. Dark mode retains Silver Studio's dark palette. The light appearance was checked in macOS Hermes Desktop **v0.21.2**.
+
+![Porcelain Aurora concept preview](docs/porcelain-aurora.svg)
+
+*Palette and layout illustration, not an application screenshot; Hermes controls the actual layout.*
+
+Install from this repository directory:
+
+```sh
+mkdir -p "${HERMES_HOME:-$HOME/.hermes}/desktop-plugins/porcelain-aurora"
+cp porcelain-aurora/plugin.js "${HERMES_HOME:-$HOME/.hermes}/desktop-plugins/porcelain-aurora/plugin.js"
+```
+
+Choose **Porcelain Aurora · 瓷白极光** in **Settings → Appearance**. If missing, use ⌘K → **Reload desktop plugins**. To uninstall this theme, remove its `porcelain-aurora` plugin folder; the original theme is unaffected.
+
+This addition is a full desktop plugin, **not yet included in the Marketplace palette package**. It does not add message timestamps.
+
 ## Appearance
 
 The palette follows the app's light/dark mode. Assistant prose uses a relaxed 1.65 line height and a 72ch reading limit; code and tables keep their available width. Sessions and Bots share the same sidebar treatment. User messages scroll with the conversation instead of sticking to the top. The composer stays visible while scrolling and becomes opaque when focused. Glass effects are decorative CSS styling; this does not implement Apple’s Liquid Glass rendering. Reduced-transparency preferences are respected.

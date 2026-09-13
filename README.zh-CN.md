@@ -8,6 +8,27 @@
 
 *上图是主题示意图，并非应用截图。*
 
+## 新增皮肤：瓷白极光
+
+**Porcelain Aurora · 瓷白极光** 是独立新皮肤，原版 **Silver Studio · 银境** 保持不变，两套可同时安装。
+
+纯白聊天区、中性瓷白侧栏、浅蓝选中底与极光蓝文字；保留玻璃模糊、高光和气泡滚动布局。移除侧栏蓝色渐变，降低背景透色。暗色模式沿用银境的深色配色。已在 macOS Hermes Desktop **v0.21.2** 检查实际浅色显示。
+
+![瓷白极光概念预览](docs/porcelain-aurora.svg)
+
+*这是配色与布局示意图，并非应用截图；实际布局由 Hermes 决定。*
+
+从本仓库目录安装：
+
+```sh
+mkdir -p "${HERMES_HOME:-$HOME/.hermes}/desktop-plugins/porcelain-aurora"
+cp porcelain-aurora/plugin.js "${HERMES_HOME:-$HOME/.hermes}/desktop-plugins/porcelain-aurora/plugin.js"
+```
+
+然后在「设置 → 外观」选择 **Porcelain Aurora · 瓷白极光**。未出现时通过 ⌘K 执行 **Reload desktop plugins**。删除 `porcelain-aurora` 插件文件夹即可卸载此皮肤，原版不受影响。
+
+这次新增的是完整版桌面插件，**尚未加入主题市场配色包**；不新增消息时间戳功能。
+
 ## 外观
 
 配色跟随应用的明暗模式。回复正文采用 1.65 倍行距与 72ch 阅读宽度上限；代码和表格保留可用宽度。Sessions 与 Bots 使用一致的侧栏质感。用户消息随对话滚动，不再吸附在顶部；输入框滚动时保持可见，聚焦后使用实色背景。玻璃效果由 CSS 实现，并非 Apple Liquid Glass 原生渲染；支持系统的减少透明度偏好。

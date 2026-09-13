@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 
-const source = await readFile(new URL('./plugin.js', import.meta.url), 'utf8')
+for (const [file, id] of [['./plugin.js', 'silver-studio'], ['./porcelain-aurora/plugin.js', 'porcelain-aurora']]) {
+const source = await readFile(new URL(file, import.meta.url), 'utf8')
 const { theme, default: plugin } = await import('data:text/javascript,' + encodeURIComponent(
   source.replace("import { THEMES_AREA } from '@hermes/plugin-sdk'", "const THEMES_AREA = 'themes'")
 ))
@@ -26,7 +27,10 @@ plugin.register({ register(c) { contribution = c }, onDispose(fn) { cleanup = fn
 assert.equal(contribution.data, theme)
 assert.equal(contribution.area, 'themes')
 assert(appended)
-assert(style.textContent.includes(':root[data-hermes-theme="silver-studio"]'))
+assert.equal(theme.name, id)
+assert.equal(plugin.id, id)
+assert(style.textContent.includes(':root[data-hermes-theme="' + id + '"]'))
 cleanup()
 assert(removed)
-console.log('Silver Studio: light/dark contrast, registration and CSS cleanup passed.')
+console.log(id + ': light/dark contrast, registration and CSS cleanup passed.')
+}
