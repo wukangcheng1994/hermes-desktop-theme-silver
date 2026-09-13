@@ -27,7 +27,7 @@ cp porcelain-aurora/plugin.js "${HERMES_HOME:-$HOME/.hermes}/desktop-plugins/por
 
 然后在「设置 → 外观」选择 **Porcelain Aurora · 瓷白极光**。未出现时通过 ⌘K 执行 **Reload desktop plugins**。删除 `porcelain-aurora` 插件文件夹即可卸载此皮肤，原版不受影响。
 
-这次新增的是完整版桌面插件，**尚未加入主题市场配色包**；不新增消息时间戳功能。
+这次新增的是完整版桌面插件，**尚未加入主题市场配色包**。会话布局与 Hermes 原生时间戳的开启方法见[完整方案](docs/conversation-and-timestamps.zh-CN.md)。
 
 ## 外观
 

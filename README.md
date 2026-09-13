@@ -27,7 +27,7 @@ cp porcelain-aurora/plugin.js "${HERMES_HOME:-$HOME/.hermes}/desktop-plugins/por
 
 Choose **Porcelain Aurora · 瓷白极光** in **Settings → Appearance**. If missing, use ⌘K → **Reload desktop plugins**. To uninstall this theme, remove its `porcelain-aurora` plugin folder; the original theme is unaffected.
 
-This addition is a full desktop plugin, **not yet included in the Marketplace palette package**. It does not add message timestamps.
+This addition is a full desktop plugin, **not yet included in the Marketplace palette package**. See the [conversation and native timestamp guide](docs/conversation-and-timestamps.md) to reproduce the complete setup.
 
 ## Appearance
 
